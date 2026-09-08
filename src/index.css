@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Lake Iseo Palette */
+    --lake-blue: #1D3D4F;
+    --lake-powder: #4F6F7E;
+    --lake-sage: #8FA28D;
+    --lake-sand: #E6DCC4;
+    --lake-sand-light: #F8F6F0;
+    --lake-cta: #D9383A;
+    --lake-gold: #D4A359;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--lake-sand-light);
+    color: var(--lake-blue);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Atmospheric Atmosphere Modes */
+.theme-morning {
+  --bg-gradient-header: linear-gradient(135deg, #1D3D4F 0%, #30586e 60%, #4F6F7E 100%);
+  --sky-glow: rgba(230, 220, 196, 0.25);
+}
+
+.theme-daylight {
+  --bg-gradient-header: linear-gradient(135deg, #163242 0%, #1D3D4F 60%, #2A5269 100%);
+  --sky-glow: rgba(143, 162, 141, 0.2);
+}
+
+.theme-sunset {
+  --bg-gradient-header: linear-gradient(135deg, #1F2839 0%, #3d2c3e 45%, #63333e 100%);
+  --sky-glow: rgba(217, 56, 58, 0.25);
+}
+
+.theme-night {
+  --bg-gradient-header: linear-gradient(135deg, #0e1c24 0%, #132430 60%, #1D3D4F 100%);
+  --sky-glow: rgba(79, 111, 126, 0.15);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(29, 61, 79, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(79, 111, 126, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(29, 61, 79, 0.6);
+}

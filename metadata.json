@@ -1,0 +1,6 @@
+{
+  "name": "I Love Lake Iseo - Dashboard Hub",
+  "description": "Cruscotto personale e hub interattivo per il Lago d'Iseo: eventi in tempo reale, meteo & vento, mappe, passaporto tappe, guide comuni e personalizzazione per profilo.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
